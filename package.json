@@ -1,0 +1,48 @@
+{
+  "name": "occ-file-upload",
+  "description": "CLI to do file uploads to OCC site",
+  "version": "0.0.0",
+  "author": "Shema Kaitakirwa",
+  "bin": {
+    "occ-file-upload": "./bin/run"
+  },
+  "bugs": "https://github.com/---/---/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@oclif/config": "^1.14.0",
+    "@oclif/plugin-help": "^2.2.3",
+    "axios": "^0.19.2",
+    "cli-ux": "^5.4.5",
+    "inquirer": "^7.0.6",
+    "tslib": "^1.11.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@types/node": "^10.17.17",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/---/---",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "occ-file-upload"
+  },
+  "repository": "---/---",
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
